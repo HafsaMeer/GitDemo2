@@ -50,6 +50,8 @@ public class Ecommerce_StandAlone_Testcase extends BaseTests {
 		ConfirmationPage confirmationpage=checkoutpage.submitOrder();
 		String confirmedMessage=confirmationpage.verifyTYMessage();
 		Assert.assertTrue(confirmedMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		System.out.println("order completed");
+		System.out.println("Best of luck");
 		
 		
 	}
