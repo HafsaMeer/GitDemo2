@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validations(failed)">
+    <classes>
+      <class name="Automations.Errorvalidations">
+        <methods>
+          <include name="ProductErrorValidations"/>
+          <include name="closeBrowser"/>
+          <include name="LoginErrorvalidations"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- Automations.Errorvalidations -->
+    </classes>
+  </test> <!-- Error Validations(failed) -->
+  <test thread-count="5" parallel="tests" name="Page Object Model(failed)">
+    <classes>
+      <class name="Automations.Ecommerce_StandAlone_Testcase">
+        <methods>
+          <include name="submitOrder" invocation-numbers="1"/>
+          <include name="closeBrowser"/>
+          <include name="OrderHistoryTest"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- Automations.Ecommerce_StandAlone_Testcase -->
+    </classes>
+  </test> <!-- Page Object Model(failed) -->
+</suite> <!-- Failed suite [Suite] -->
