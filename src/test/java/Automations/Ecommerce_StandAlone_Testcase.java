@@ -52,7 +52,9 @@ public class Ecommerce_StandAlone_Testcase extends BaseTests {
 		Assert.assertTrue(confirmedMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		System.out.println("order completed");
 		System.out.println("Best of luck");
-		
+		// in case of getting pull from the repositary use git stash save --keep-index command in command prompt
+		// after that give command git pull the changes will be reflecting.
+		System.out.println("successful pull");
 		
 	}
           //To verify ADIDAS ORIGINAL is displaying in the orders page 
