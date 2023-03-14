@@ -66,6 +66,7 @@ public class Ecommerce_StandAlone_Testcase extends BaseTests {
         	 Assert.assertTrue(orderpage.verifyOrderDisplay(productName));
         	 System.out.println("successful pull");
         	 System.out.println("successful pull");
+        	 System.out.println("successful merge");
           }
  //we cannot create 100 classes for 100 tests we should intelligently keep one type of test in one class and their respective tests at one place.
           // <suite parallel="tests"  name="Suite"> this parallel property in testng file operate all the tests under suite run paralelly and invoke multiple browsers at a time.
